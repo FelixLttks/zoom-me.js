@@ -3,6 +3,9 @@
 
 You just saw a demo of a use-case. With zoom-me.js its super easy to implement a cool looking zoom effect on an image at the top of your webpage.
 
+## demo:
+http://zoom-me.js.luttkus.net/
+
 ## how to use it?
 
 *   download it [here](/zoom-me.js)
