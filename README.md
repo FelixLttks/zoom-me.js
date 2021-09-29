@@ -7,7 +7,7 @@ You just saw a demo of a use-case. With zoom-me.js its super easy to implement a
 
 *   download it [here](/zoom-me.js)
 *   put the file inside your project folder
-*   link the file by putting <script src="zoom-me.js" defer></script> inside your <head></head>
+*   link the file by putting ```<script src="zoom-me.js" defer></script>``` inside your ```<head></head>```
 *   inside your <body>, wrap all inside <dic class="content" id="content"></body>
 *   put ``` <div id="zoom-container" data-zoom="4" data-zoomSpeed="400" style=" width: 100vw; height: 100vh; overflow: hidden;"> <img id="zoom" src="helloImg.png" style=" width: 100%; height: 100%; object-fit: cover;"> </div>``` before step 4)
 *   now modify the parameters to fit your needs :)
