@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zoom-me.js</title>
 
+    <!-- link your css styling -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- link the zoom-me.js script -->
     <script src="zoom-me.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,13 +19,8 @@
 </head>
 
 <body>
-    hello
 
-    <script>
-        window.onbeforeunload = function() {
-            window.scrollTo(0, 0);
-        }
-    </script>
+    <!-- the zooming image -->
     <div id="zoom-container" data-zoom="4" data-zoomSpeed="400" style="
     width: 100vw;
     height: 100vh;
@@ -33,6 +31,7 @@
         object-fit: cover;">
     </div>
 
+    <!-- your page-content -->
     <div class="content" id="content">
         <h1>zoom-me.js</h1>
         <p>You just saw a demo of a use-case. With zoom-me.js its super easy to implement a cool looking zoom effect on an image at the top of your webpage.</p>
