@@ -12,16 +12,18 @@ function update_zoom() {
     var zoomSpeed = zoomContainer.dataset.zoomspeed;
     var zoomFactor = zoomContainer.dataset.zoom;
 
-    console.log(zoomFactor - window.pageYOffset / zoomSpeed)
+    console.log(zoomOffset)
 
     if (zoomFactor - window.pageYOffset / zoomSpeed < 1) {
-        if (zoomOffset == 0) zoomOffset = window.pageYOffset - 30;
+        //no zooming
+        if (zoomOffset == 0) zoomOffset = zoomFactor * zoomSpeed - zoomSpeed - 30;
         zoomImage.style.transform = `scale(1)`;
         zoomContainer.style.position = "relative";
         zoomContainer.style.top = `${zoomOffset}px`;
         content.style.top = `${zoomOffset}px`;
         content.style.zIndex = "0";
     } else {
+        //zooming
         zoomImage.style.transform = `scale(${zoomFactor -window.pageYOffset/zoomSpeed})`;
         zoomContainer.style.position = "fixed";
         zoomContainer.style.top = "0";
